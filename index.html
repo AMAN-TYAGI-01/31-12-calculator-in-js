@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        #box{
+            width: 300px;
+           background-color:rgb(85, 246, 85);
+            /* background-color: black; */
+            padding: 10px;
+            margin: auto;
+            border: 2px solid white;
+            border-radius: 30px;
+        }
+        #myinput{
+            width: 270px;
+            height: 50px;
+            margin-left: 10px;
+            font-size: 20px;
+            border-radius: 10px;
+            border-color: white;
+        }
+       button{
+        width: 50px;
+        color: #fff;
+        /* color:rgb(34, 245, 34); */
+        /* background-color: white; */
+        background-color:rgba(0,0,0,0.7) ;
+        height: 50px;
+        font-weight: bold;
+        margin: 10px;
+        font-size: large;
+        border: 2px solid;
+        margin-top: 40px;
+        border-radius: 50%;
+        text-shadow: 0px 1px 5px rgba(0,0,0,0.2);
+       }
+       button:hover{
+        background-color: blue;
+       }
+       #plus{
+        height: 70px;
+        background-color: orange;
+        color:white;
+        border-radius: 10px;
+       }
+       #minus{
+        background-color: orange;
+        color: white;
+       }
+       #multi{
+        background-color: orange;
+        color: white;
+       }
+       #divide{
+        background-color: orange;
+        color: white;
+       }
+       #ans{
+        width: 100px;
+        margin-left: 20px;
+        background-color: orange;
+        color: white;
+        border-radius: 10px;
+       }
+       #clr{
+        margin-left: 94px;
+        width: 100px;
+        color:white;
+        background-color: rgb(118, 4, 4);
+        border-radius: 10px;
+       }
+    input{
+        color: red;
+        text-align: center;
+        font-size: 25px;
+    }
+    </style>
+</head>
+<body>
+    <div id="box">
+ <input type="text" id="myinput" placeholder="0">
+ <button id="btn1" onclick="document.getElementById('myinput').value+=document.getElementById('btn1').innerHTML">1</button>
+ <button id="btn2" onclick="document.getElementById('myinput').value+=document.getElementById('btn2').innerHTML">2</button>
+ <button id="btn3" onclick="document.getElementById('myinput').value+=document.getElementById('btn3').innerHTML">3</button>
+ <button id="minus" onclick="document.getElementById('myinput').value+=document.getElementById('minus').innerHTML">-</button>
+ <button id="btn4" onclick="document.getElementById('myinput').value+=document.getElementById('btn4').innerHTML">4</button>
+ <button id="btn5" onclick="document.getElementById('myinput').value+=document.getElementById('btn5').innerHTML">5</button>
+ <button id="btn6" onclick="document.getElementById('myinput').value+=document.getElementById('btn6').innerHTML">6</button>
+ <button id="multi" onclick="document.getElementById('myinput').value+=document.getElementById('multi').innerHTML">*</button>
+ <button id="btn7" onclick="document.getElementById('myinput').value+=document.getElementById('btn7').innerHTML">7</button>
+ <button id="btn8" onclick="document.getElementById('myinput').value+=document.getElementById('btn8').innerHTML">8</button>
+ <button id="btn9" onclick="document.getElementById('myinput').value+=document.getElementById('btn9').innerHTML">9</button>
+ <button id="plus" onclick="document.getElementById('myinput').value+=document.getElementById('plus').innerHTML">+</button>
+ <button id="btn0" onclick="document.getElementById('myinput').value+=document.getElementById('btn0').innerHTML">0</button>
+ <button id="divide" onclick="document.getElementById('myinput').value+=document.getElementById('divide').innerHTML">/</button>
+  <button id="ans" onclick="document.getElementById('myinput').value=eval(document.getElementById('myinput').value)">=</button>
+  <button id="clr" onclick="document.getElementById('myinput').value=''">CLR</button> 
+</div>
+    
+</body>
+</html>
